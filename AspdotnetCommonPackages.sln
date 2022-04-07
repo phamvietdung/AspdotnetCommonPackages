@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspdotnetCommonPackages", "src\AspdotnetCommonPackages\AspdotnetCommonPackages.csproj", "{5FBD803C-9786-425A-A8EA-3F48EA848FAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspdotnetCommonPackages", "src\AspdotnetCommonPackages\AspdotnetCommonPackages.csproj", "{5FBD803C-9786-425A-A8EA-3F48EA848FAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspdotnetCommonPackages.Test", "src\AspdotnetCommonPackages.Test\AspdotnetCommonPackages.Test\AspdotnetCommonPackages.Test.csproj", "{299E2567-FFF9-4F6D-99B6-9A3E665E1B74}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{5FBD803C-9786-425A-A8EA-3F48EA848FAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FBD803C-9786-425A-A8EA-3F48EA848FAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FBD803C-9786-425A-A8EA-3F48EA848FAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{299E2567-FFF9-4F6D-99B6-9A3E665E1B74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{299E2567-FFF9-4F6D-99B6-9A3E665E1B74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{299E2567-FFF9-4F6D-99B6-9A3E665E1B74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{299E2567-FFF9-4F6D-99B6-9A3E665E1B74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

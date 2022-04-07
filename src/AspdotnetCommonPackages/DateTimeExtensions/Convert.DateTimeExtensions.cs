@@ -11,11 +11,11 @@ namespace AspdotnetCommonPackages
     {
         public static Boolean IsValidDateTimeString(this string input)
         {
-
+            throw new NotImplementedException();
         }
         public static DateTime FromString(this string input)
         {
-
+            throw new NotImplementedException();
         }
     }
 }
