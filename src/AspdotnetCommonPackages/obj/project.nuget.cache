@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "P1qe0v97/8jkGaKzVfe68ZPcNAq3ciOelTHCOUOdPuQtE9VFrTTxbFmmb6Ecs1WLkwRvygcdTl3QM4609lwUOA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\dungpv.AUTOADS\\source\\repos\\AspdotnetCommonPackages\\src\\AspdotnetCommonPackages\\AspdotnetCommonPackages.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dungpv.AUTOADS\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\dungpv.AUTOADS\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
