@@ -19,6 +19,16 @@ namespace AspdotnetCommonPackages
             return source.IsNull() ? false : true;
         }
 
+        public static Boolean IsNotNulAndNotDefault<T>(this T source)
+        {
+            return source.IsNotNull() && source.IsNotDefault();
+        }
+
+        public static Boolean IsNotDefault<T>(this T source)
+        {
+            return !EqualityComparer<T>.Default.Equals(source, default(T));
+        }
+
         public static Boolean IsNotNullAndHaveData<T>(this ICollection<T> sources)
         {
             if (sources.IsNull())

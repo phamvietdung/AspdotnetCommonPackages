@@ -2,6 +2,16 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+	  <!--first, metadata about package-->
+	  <PackageId>AspdotnetCommonPackages</PackageId>
+	  <Version>1.0.0</Version>
+	  <Authors>Duvie Pham</Authors>
+	  <Company>None</Company>
+	  <PackageTags>Common,Handling</PackageTags>
+	  <Description>This packages have some common handle when you peform text, number, datetime, icollection.....</Description>
+	  <!--then run donet pack-->
+	  <!--or this line bellow to generate everytime on build-->
+	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
 </Project>

@@ -1,6 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using AspdotnetCommonPackages.Test.Helpers;
+using System.Globalization;
 
 namespace AspdotnetCommonPackages.Test
 {
@@ -11,11 +12,22 @@ namespace AspdotnetCommonPackages.Test
         //[ExpectedException(typeof(NotImplementedException), "NotImplementedException")]
         public void IsValidDateTimeString_Success()
         {
-            string inputDatetimeString = Const.DateTimeCorrectFormat;
+            string inputDatetimeString = "1/1/2012";
+                //Const.DateTimeCorrectFormat;
 
-            DateTime result = inputDatetimeString.FromString();
+            var parseable = inputDatetimeString.GetParseableToDateTimeFormat();
 
-            Assert.IsTrue(result.IsNotNull() && result != DateTime.MinValue);
+
+
+            Assert.IsTrue(parseable.IsNotNulAndNotDefault());
+
+
+
+            //Assert.IsTrue(isValid);
+
+            //DateTime result = inputDatetimeString.FromString();
+
+            //Assert.IsTrue(result.IsNotNull() && result != DateTime.MinValue);
         }
 
         [TestMethod]
