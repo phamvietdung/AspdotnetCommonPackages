@@ -1,4 +1,4 @@
-## NullExtensions
+## AspdotnetCommonPackages.NullExtensions
 | Property  | Return | Description  |
 |---|---|---|
 | **IsNull**<T>(this T source)  | Boolean  | Return true if T is null, and false if not  |
@@ -7,12 +7,12 @@
 | **IsNotNulAndNotDefault**<T>(this T source)  | Boolean  | Return true if T is not null and not equivalent with default(T) value  |
 | **IsNotNullAndHaveData**<T>(this **ICollection**<T> sources)  | Boolean  | Return true if ICollection<T> it not null and have data  |
 
-## DatetimeExtensions
+## AspdotnetCommonPackages.DatetimeExtensions
 | Property  | Return | Description  |
 |---|---|---|
 | **GetParseableToDateTimeFormat**(this string source, CultureInfo cultureInfo = null)  | KeyValuePair<string, DateTime>  | Try parse the input string in all type of **DateTimeFormatInfo** and return **KeyValuePair** with name of this DateTime parse Pattern and DataTime value after parse |
 
-## TextExtensions
+## AspdotnetCommonPackages.TextExtensions
 | Property  | Return | Description  |
 |---|---|---|
 | **Masking**(this string source, string alternative_character = "*", int ratioHidden = 60)  | String  | Try masking the output text with alternative_character with ratio of hidden character is greater ratioHidden |
