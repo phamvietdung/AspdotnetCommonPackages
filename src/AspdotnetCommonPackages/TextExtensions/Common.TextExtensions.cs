@@ -15,7 +15,12 @@ namespace AspdotnetCommonPackages
                 .ReplaceUnicodeCharacterByTheASIICharacter(convertToLowerCase)
                 .ReplaceSpecialCharacterByUnderLineCharacter(alternativeCharacter);
         }
-
+        
+        public static string ToSearchableString(this string source)
+        {
+            return source.ReplaceUnicodeCharacterByTheASIICharacter();
+        }
+          
         public static string ReplaceUnicodeCharacterByTheASIICharacter(this string source, bool convertToLowerCase = true)
         {
             if (source.IsNull())
