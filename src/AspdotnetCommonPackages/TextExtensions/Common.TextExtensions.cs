@@ -8,7 +8,23 @@ namespace AspdotnetCommonPackages
 {
     public static partial class TextExtensions
     {
-        
+
+        public static Guid ToGuid(this string input)
+        {
+            return Guid.Parse(input);
+        }
+
+        public static List<Guid> ToGuids(this string input, char seperator = ',')
+        {
+            if (string.IsNullOrWhiteSpace(input)) return new List<Guid>();
+
+            var splited = input.Split(seperator);
+
+            if (!splited.Any()) return new List<Guid>();
+
+            return splited.Select(s => s.ToGuid()).ToList();
+        }
+
         public static string ToAlias(this string source, bool convertToLowerCase = true, string alternativeCharacter = "_")
         {
             return source
