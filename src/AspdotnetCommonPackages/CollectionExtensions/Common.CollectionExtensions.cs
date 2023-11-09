@@ -14,5 +14,17 @@ namespace AspdotnetCommonPackages
 
             return source.First();
         }
+
+        public static List<TValue> ToList<TId, TValue>(this Dictionary<TId, List<TValue>> input)
+        {
+            var result = new List<TValue>();
+
+            foreach(var item in input)
+            {
+                result.AddRange(item.Value);
+            }
+
+            return result;
+        }
     }
 }
